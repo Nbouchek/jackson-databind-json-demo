@@ -21,8 +21,8 @@ public class Driver {
             System.out.println("isActive = " + theStudent.isActive());
             System.out.println("Address: \n" + theStudent.getAddress());
             System.out.println("Languages:");
-            for (String language: theStudent.getLanguages()) {
-                System.out.println("\t"+ language);
+            for (String language : theStudent.getLanguages()) {
+                System.out.println("\t" + language);
             }
         } catch (Exception exc) {
             exc.printStackTrace();

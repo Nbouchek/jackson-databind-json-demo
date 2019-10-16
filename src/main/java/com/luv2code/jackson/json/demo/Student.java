@@ -1,12 +1,14 @@
 package com.luv2code.jackson.json.demo;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Student {
+    Address address;
     private int id;
     private String firstName;
     private String lastName;
     private boolean isActive;
-
-    Address address;
     private String[] languages;
 
     public int getId() {
